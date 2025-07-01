@@ -88,10 +88,11 @@ class ReferLinkWidget extends StatelessWidget {
           SizedBox(
             width: MediaQuery.of(context).size.width,
             child: DottedBorder(
-              color: MyColor.borderColor,
-              strokeWidth: 1,
-              dashPattern: const [5,3],
-              radius: const Radius.circular(4),
+              // TODO: Come back and update this properly
+              // color: MyColor.borderColor,
+              // strokeWidth: 1,
+              // dashPattern: const [5,3],
+              // radius: const Radius.circular(4),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [

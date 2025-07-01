@@ -52,9 +52,12 @@ class EnableQRCodeWidget extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.all(0.8),
             child: DottedBorder(
-              borderType: BorderType.RRect,
-              color: MyColor.colorGrey.withOpacity(0.5),
-              radius: const Radius.circular(Dimensions.defaultRadius),
+              // TODO: Come back and update this properly
+              options: RectDottedBorderOptions(
+                color: MyColor.colorGrey.withOpacity(0.5),
+              ),
+              // borderType: BorderType.RRect,
+              // radius: const Radius.circular(Dimensions.defaultRadius),
               child: Container(
                 decoration: BoxDecoration(color: MyColor.colorWhite, borderRadius: BorderRadius.circular(Dimensions.defaultRadius - 1)),
                 width: double.infinity,
